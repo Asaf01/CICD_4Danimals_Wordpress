@@ -34,5 +34,16 @@ pipeline {
                 }
             }
         }
-    }
-}
+        stages {
+        stage("test eks cluster") {
+            steps {
+                script {
+                        sh "kubectl cluster-info"
+                        echo "EKS Cluster test completed"
+                    }
+                }
+            }
+              }
+          
+           }
+             }
