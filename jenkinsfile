@@ -39,6 +39,7 @@ pipeline {
             steps {
                 script {
                         sh "kubectl cluster-info"
+                        sh "kubectl get all"
                         echo "EKS Cluster test completed"
                     }
                 }
