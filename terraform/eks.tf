@@ -11,14 +11,14 @@ module "eks" {
 
     tags = {
         environment = "development"
-        application = "nginx-app"
+        application = "wordpress"
     }
 
     eks_managed_node_groups = {
         dev = {
-            min_size = 1
-            max_size = 2
-            desired_size = 1
+            min_size = 2
+            max_size = 4
+            desired_size = 2
 
             instance_types = ["t2.small"]
         }
