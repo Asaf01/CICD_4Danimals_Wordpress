@@ -13,17 +13,24 @@ In this project we will create:
     CI/CD - Terraform - AWS - Jenkins - Pipeline
 
 Architecture
+
 This architecture displays the Pipeline stages - Checkout, Initialisation, Validation, Plan and Apply.
+
 pic
+
 Deploy Terraform Architecture using Jenkins Pipeline
 pic
 
 Elastic Kubernetes Service (EKS) cluster and deploy Kubernetes manifest files inside it using Jenkins.
 
 Requirements
+
 Name 	Version
+
 terraform 	~>1.3.0
+
 aws 	~>4.30.0
+
 Providers
 Name 	Version
 aws 	~>4.30.0
