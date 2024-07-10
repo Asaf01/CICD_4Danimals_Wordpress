@@ -1,5 +1,5 @@
 resource "aws_default_security_group" "default-sg" {
-  vpc_id = aws_vpc.my-vpc.id
+  vpc_id = aws_vpc.app-vpc.id
   ingress {
     from_port   = 22
     to_port     = 22
