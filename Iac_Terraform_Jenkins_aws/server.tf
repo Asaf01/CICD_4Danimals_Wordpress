@@ -11,7 +11,7 @@ data "aws_ami" "latest-amazon-linux-image" {
   }
 }
 
-resource "aws_instance" "my-server" {
+resource "aws_instance" "node-server" {
   ami                         = data.aws_ami.latest-amazon-linux-image.id
   instance_type               = var.instance_type
   key_name                    = "jenkins-server-demo"
