@@ -22,13 +22,13 @@ pipeline {
                 script {
                     dir('kubernetes') {
                         sh "aws eks update-kubeconfig --name my-eks-cluster"
-                        sh "kubectl create -f mysql-pv.yaml"
-                        sh "kubectl create -f mysql-config.yaml" 
-                        sh "kubectl create -f db-root-cred.yaml" 
-                        sh "kubectl create -f db-cred.yaml"
-                        sh "kubectl create -f mysql.yaml"
-                        sh "kubectl create -f wp-configmap.yaml"
-                        sh "kubectl create -f wordpress.yaml" 
+                        sh "kubectl apply -f mysql-pv.yaml"
+                        sh "kubectl apply -f mysql-config.yaml" 
+                        sh "kubectl apply -f db-root-cred.yaml" 
+                        sh "kubectl apply -f db-cred.yaml"
+                        sh "kubectl apply -f mysql.yaml"
+                        sh "kubectl apply -f wp-configmap.yaml"
+                        sh "kubectl apply -f wordpress.yaml" 
                         
                     }
                 }
