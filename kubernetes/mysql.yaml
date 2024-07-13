@@ -22,6 +22,7 @@ metadata:
     app: mysql
     tier: database
 spec:
+  replicas: 2  
   selector:
     matchLabels:
       app: mysql
