@@ -5,7 +5,7 @@ This project build and deploy [Wordpress](https://wordpress.org/) application us
 ## Architecture
 
 
-![image](https://user-images.githubusercontent.com/83971386/201048278-cd83be08-7417-4aa4-94c5-1c62daf20724.png)<img width="830" alt="diagram" src="https://github.com/user-attachments/assets/647d3630-3b0d-4103-b790-fd34acd846fb">
+![image]<img width="830" alt="diagram" src="https://github.com/user-attachments/assets/647d3630-3b0d-4103-b790-fd34acd846fb">
 
 
 
