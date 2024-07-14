@@ -10,8 +10,16 @@ This project build and deploy [Wordpress](https://wordpress.org/) application us
 
 
 
-## Build Process
-This section 
+AWS Architecture
+
+* VPC with CIDR 10.0.0.0/16
+* 3 subnets (public) with CIDR 10.0.4.0/24, 10.0.5.0/24, 10.0.6.0/24
+* AWS Networking (Route Table, IGW, Security Groups)
+* S3 Bucket
+* EC2 Instance (small.t2)
+* eks
+* Jenkins server
+* ```CI/CD - Terraform - AWS - Jenkins - Pipeline```
 
 
 
