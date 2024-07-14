@@ -2,10 +2,13 @@
 
 This project involves the creation of a CICD Jenkins Pipeline which will be deploying a Terraform Architecture, using the following stages - Checkout, Initialisation, Validation, Plan and Apply.
 
-In this project we will create:
+In this project we will create  :
 
+/ 
     VPC with CIDR 10.0.0.0/16
+/
     3 subnets (public) with CIDR 10.0.1.0/24, 10.0.2.0/24, 10.0.3.0/24
+ /   
     AWS Networking (Route Table, IGW, Security Groups)
     S3 Bucket
     EC2 Instance
