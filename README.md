@@ -20,7 +20,6 @@ AWS Architecture
 * S3 Bucket
 * EC2 Instance, Nodes (t2.small)
 * eks
-* Jenkins server
 * ```CI/CD - Terraform - AWS - Jenkins - Pipeline```
 
 
