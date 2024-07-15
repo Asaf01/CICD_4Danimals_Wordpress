@@ -8,7 +8,7 @@ metadata:
 spec:
   ports:
   - port: 3306
-    targetPort: 3306 # Explicitly specifying the target port
+    targetPort: 3306 
   selector:
     app: mysql
     tier: database
@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: mysql 
-        image: bendrorasaf/mydb:latest 
+        image: bendrorasaf/mydb 
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
