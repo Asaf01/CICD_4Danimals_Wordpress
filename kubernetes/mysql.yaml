@@ -8,20 +8,20 @@ metadata:
 spec:
   ports:
   - port: 3306
-    targetPort: 3306 
   selector:
     app: mysql
     tier: database
   clusterIP: None
 ---
-apiVersion: apps/v1
+
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   name: mysql
   labels:
     app: mysql
     tier: database
-spec:
+spec:  
   selector:
     matchLabels:
       app: mysql
@@ -35,32 +35,32 @@ spec:
         tier: database
     spec:
       containers:
-      - name: mysql 
-        image: bendrorasaf/mydb 
+      - image: bendrorasaf/mydb:v2
+        name: mysql
         env:
-        - name: MYSQL_ROOT_PASSWORD
+        - name: MYSQL_ROOT_PASSWORD 
           valueFrom:
             secretKeyRef:
-              name: db-root-credentials
-              key: password
-        - name: MYSQL_USER
+              name: db-root-credentials 
+              key: password  
+        - name: MYSQL_USER 
           valueFrom:
             secretKeyRef:
               name: db-credentials
               key: username
-        - name: MYSQL_PASSWORD
+        - name: MYSQL_PASSWORD 
           valueFrom:
             secretKeyRef:
               name: db-credentials
               key: password
-        - name: MYSQL_DATABASE
+        - name: MYSQL_DATABASE 
           valueFrom:
             configMapKeyRef:
               name: db-conf
               key: name
         ports:
         - containerPort: 3306
-          name: mysql 
+          name: mysql
         volumeMounts:
         - name: mysql-persistent-storage
           mountPath: /var/lib/mysql
