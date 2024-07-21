@@ -1,4 +1,3 @@
-link: http://af325bfa45c9941caa1a209918f02b10-2096437675.us-east-1.elb.amazonaws.com/
 
 # CICD-Wordpress deployment on aws with Terraform
 This project build and deploy [Wordpress](https://wordpress.org/) application using a [Jenkins](https://www.jenkins.io/) CICD Pipeline and [Docker](https://www.docker.com/) acting as the application container and [Terraform](https://www.terraform.io/) as IAC builder on AWS.
