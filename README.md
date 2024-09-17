@@ -3,7 +3,8 @@
 This project build and deploy [Wordpress](https://wordpress.org/) application using a [Jenkins](https://www.jenkins.io/) CICD Pipeline and [Docker](https://www.docker.com/) acting as the application container and [Terraform](https://www.terraform.io/) as IAC builder on AWS.
 
 The first step is to build the VPC on AWS and the Jenkins Server with terrfaform.
-The 2nd stage is to building the EKS with Wordpresss and Mysql serrvices. you can user my open images or docker official. 
+The 2nd stage is to building the EKS with Wordpresss and Mysql serrvices. you can use my open images or use docker official. 
+
 For runnig the CI stage - testing new image ,use the repo https://github.com/Asaf01/CICD_4Danimals_Wordpress_Dev with the same Jenkins Sever.
 
 https://4danimals.com/
