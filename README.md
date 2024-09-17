@@ -1,7 +1,8 @@
 
 # CICD-Wordpress deployment on aws with Terraform
 This project build and deploy [Wordpress](https://wordpress.org/) application using a [Jenkins](https://www.jenkins.io/) CICD Pipeline and [Docker](https://www.docker.com/) acting as the application container and [Terraform](https://www.terraform.io/) as IAC builder on AWS.
-First step is to build the VPC on AWS and the Jenkins Server with terrfaform.
+
+The first step is to build the VPC on AWS and the Jenkins Server with terrfaform.
 The 2nd stage is to building the EKS with Wordpresss and Mysql serrvices. you can user my open images or docker official. 
 
 https://4danimals.com/
